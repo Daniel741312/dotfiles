@@ -1,0 +1,25 @@
+#这是一个windows上的一个ssh配置文件，用它可以方便的ssh到虚拟机上，这个文件保存在C:\Users\Daniel\.ssh\config
+
+Host u18A
+  HostName 192.168.93.11
+  User daniel
+  IdentityFile C:\Users\Daniel\.ssh\win_rsa
+  PreferredAuthentications publickey
+
+Host centos7
+  HostName 192.168.93.12
+  User daniel
+  IdentityFile C:\Users\Daniel\.ssh\win_rsa
+  PreferredAuthentications publickey
+
+Host u20
+  HostName 192.168.93.13
+  User daniel
+  IdentityFile C:\Users\Daniel\.ssh\win_rsa
+  PreferredAuthentications publickey
+
+Host u18B
+  HostName 192.168.93.14
+  User daniel
+  IdentityFile C:\Users\Daniel\.ssh\win_rsa
+  PreferredAuthentications publickey

@@ -1,0 +1,28 @@
+[user]
+	name = Daniel741312
+	email = syc198@qq.com
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[core]
+	pager = less -FRSX
+	editor = vim
+[merge]
+	tool = vimdiff
+	
+
+[alias]
+	
+	co = checkout
+	# -s, --short: give the output in the short-format
+	# -b, --branch: show the branch and tracking info even in short-format
+	br = branch
+	st = status -sb
+	ci = commit
+	lg = log --all --graph --decorate --oneline
+
+	d = !git --no-pager diff
+	cl = clone --depth=1 	#shallow clone
