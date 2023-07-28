@@ -1,0 +1,49 @@
+set nocompatible
+syntax on
+set shortmess+=I
+set number
+set relativenumber
+set encoding=utf-8
+
+filetype indent on
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set cursorline
+set nowrap
+
+set showmatch
+set hlsearch
+set incsearch
+set ignorecase
+set noerrorbells
+
+set smartcase
+set mouse+=a
+set history=1000
+
+command! NHL nohlsearch
+command! NN set nonumber | set norelativenumber
+command! SN set number | set relativenumber
+
+map <C-n> :NERDTreeToggle<CR>
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+
+Plug 'jistr/vim-nerdtree-tabs'
+
+Plug 'preservim/tagbar'
+
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'junegunn/vim-easy-align'
+
+Plug 'vim-scripts/SuperTab'
+
+call plug#end()
